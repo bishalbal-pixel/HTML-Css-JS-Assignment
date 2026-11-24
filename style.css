@@ -1,0 +1,125 @@
+/* Shared stylesheet for all assignment pages */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #1f3c88;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #1f3c88;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+a {
+  color: #1f3c88;
+}
+
+ul.question-list li {
+  margin: 6px 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+button {
+  background: #1f3c88;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #15296a;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0 10px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Console output box used by the JavaScript question runner */
+#output {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: Consolas, "Courier New", monospace;
+  padding: 15px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  min-height: 100px;
+}
+
+.error {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.success {
+  color: #1e8449;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background: #1f3c88;
+  color: #fff;
+}
+
+/* Class used by DOM Q10 */
+.styled-paragraph {
+  background-color: lightgray;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.card h2:first-child {
+  margin-top: 0;
+}
