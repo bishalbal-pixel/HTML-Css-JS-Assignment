@@ -1,36 +1,34 @@
-// Array Q11 (Bonus): Student Marks Management System
-
+// Q11 - student marks management (bonus)
 let marks = [75, 45, 90, 32, 60];
 
-// 1. Display all student marks
-console.log("1. All Student Marks:");
+// show all marks
 for (let i = 0; i < marks.length; i++) {
-  console.log("   Student " + (i + 1) + ": " + marks[i]);
+  console.log("Student " + (i + 1) + ": " + marks[i]);
 }
 
-// 2. Add a new student's mark
+// add new mark
 marks.push(85);
-console.log("2. After adding new mark (85):", marks);
+console.log(marks);
 
-// 3. Remove the last student's mark
-let removedMark = marks.pop();
-console.log("3. Removed last mark (" + removedMark + "):", marks);
+// remove last mark
+marks.pop();
+console.log(marks);
 
-// 4. Calculate total marks
+// total
 let total = 0;
 for (let i = 0; i < marks.length; i++) {
   total = total + marks[i];
 }
-console.log("4. Total Marks:", total);
+console.log("Total: " + total);
 
-// 5. Calculate average marks
+// average
 let average = total / marks.length;
-console.log("5. Average Marks:", average.toFixed(2));
+console.log("Average: " + average);
 
-// 6 & 7. Find the highest and lowest marks
+// highest and lowest
 let highest = marks[0];
 let lowest = marks[0];
-for (let i = 1; i < marks.length; i++) {
+for (let i = 0; i < marks.length; i++) {
   if (marks[i] > highest) {
     highest = marks[i];
   }
@@ -38,25 +36,19 @@ for (let i = 1; i < marks.length; i++) {
     lowest = marks[i];
   }
 }
-console.log("6. Highest Mark:", highest);
-console.log("7. Lowest Mark:", lowest);
+console.log("Highest: " + highest);
+console.log("Lowest: " + lowest);
 
-// 8 & 9. Count and display students who passed (marks >= 40)
-let passCount = 0;
-let passedMarks = [];
+// passed students
+let count = 0;
+console.log("Passed students marks:");
 for (let i = 0; i < marks.length; i++) {
   if (marks[i] >= 40) {
-    passCount++;
-    passedMarks.push(marks[i]);
+    count++;
+    console.log(marks[i]);
   }
 }
-console.log("8. Number of Students Passed:", passCount);
-console.log("9. Passed Students' Marks:");
-for (let i = 0; i < marks.length; i++) {
-  if (marks[i] >= 40) {
-    console.log("   Student " + (i + 1) + ": " + marks[i]);
-  }
-}
+console.log("Total passed: " + count);
 
-// 10. Display the updated array
-console.log("10. Updated Array:", marks);
+// updated array
+console.log(marks);

@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM Q4 - Display User Input</title>
+  <title>DOM Q4</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p><a href="index.html">&larr; Back to all questions</a></p>
-  <div class="card">
-    <h1>Display User Input</h1>
-    <label for="studentName">Student Name</label>
-    <input type="text" id="studentName" placeholder="Enter your name">
-    <br>
-    <button onclick="showGreeting()">Submit</button>
-    <p id="result"></p>
-  </div>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="submitName()">Submit</button>
+
+  <p id="result"></p>
+
   <script src="dom-q4-display-user-input.js"></script>
 </body>
 </html>

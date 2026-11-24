@@ -1,14 +1,9 @@
-// DOM Q3: Toggle the password field between hidden and visible
+function showPassword() {
+  let pass = document.getElementById("password");
 
-function togglePassword() {
-  let passwordInput = document.getElementById("password");
-  let button = document.getElementById("toggleBtn");
-
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    button.textContent = "Hide Password";
+  if (pass.type == "password") {
+    pass.type = "text";
   } else {
-    passwordInput.type = "password";
-    button.textContent = "Show Password";
+    pass.type = "password";
   }
 }

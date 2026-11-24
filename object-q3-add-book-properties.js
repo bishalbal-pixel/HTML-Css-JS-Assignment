@@ -1,5 +1,4 @@
-// Object Q3: Add new properties to a book object
-
+// Q3 - add new properties
 let book = {
   title: "JavaScript Basics",
   author: "David",
@@ -9,4 +8,4 @@ let book = {
 book.publisher = "ABC Publication";
 book.pages = 250;
 
-console.log("Complete Book Object:", book);
+console.log(book);

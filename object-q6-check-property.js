@@ -1,5 +1,4 @@
-// Object Q6: Check whether the user object has an email property
-
+// Q6 - check email property
 let user = {
   username: "admin",
   email: "admin@gmail.com",

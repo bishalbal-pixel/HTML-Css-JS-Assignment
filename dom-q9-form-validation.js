@@ -1,25 +1,18 @@
-// DOM Q9: Validate the registration form when Submit is clicked
-
-document.getElementById("registerForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // stop the page from reloading
-
+function validate() {
   let name = document.getElementById("name").value.trim();
   let email = document.getElementById("email").value.trim();
   let password = document.getElementById("password").value.trim();
-  let message = document.getElementById("message");
+  let msg = document.getElementById("msg");
 
-  message.className = "error";
-
-  if (name === "" || email === "" || password === "") {
-    message.textContent = "All fields must be filled.";
+  if (name == "" || email == "" || password == "") {
+    msg.textContent = "Please fill all fields";
   } else if (name.length < 3) {
-    message.textContent = "Name must contain at least 3 characters.";
+    msg.textContent = "Name must have at least 3 characters";
   } else if (!email.includes("@")) {
-    message.textContent = "Email must contain @.";
+    msg.textContent = "Email must contain @";
   } else if (password.length < 6) {
-    message.textContent = "Password must contain at least 6 characters.";
+    msg.textContent = "Password must have at least 6 characters";
   } else {
-    message.textContent = "Registration Successful!";
-    message.className = "success";
+    msg.textContent = "Registration Successful!";
   }
-});
+}

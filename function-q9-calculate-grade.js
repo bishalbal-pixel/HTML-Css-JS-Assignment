@@ -1,8 +1,7 @@
-// Function Q9: Calculate a student's grade from marks
-
+// Q9 - grade calculator
 function calculateGrade(marks) {
   if (marks < 0 || marks > 100) {
-    return "Invalid Marks";
+    return "Invalid marks";
   } else if (marks >= 90) {
     return "A+";
   } else if (marks >= 80) {
@@ -18,9 +17,7 @@ function calculateGrade(marks) {
   }
 }
 
-let testMarks = [95, 85, 72, 65, 55, 30, 105, -5];
-
-for (let i = 0; i < testMarks.length; i++) {
-  let grade = calculateGrade(testMarks[i]);
-  console.log("Marks: " + testMarks[i] + " -> Student Grade: " + grade);
-}
+console.log("Student Grade: " + calculateGrade(85));
+console.log("Student Grade: " + calculateGrade(95));
+console.log("Student Grade: " + calculateGrade(45));
+console.log("Student Grade: " + calculateGrade(120));

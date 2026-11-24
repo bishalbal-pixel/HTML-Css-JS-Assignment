@@ -1,19 +1,12 @@
-// Object Q9: Update the student's address with user input
-
+// Q9 - update address from user
 let student = {
   name: "Ram",
   age: 20,
   section: "A",
   address: "Kathmandu"
 };
-console.log("Original Object:", student);
 
-let newAddress = prompt("Enter the new address:");
+let newAddress = prompt("Enter new address");
+student.address = newAddress;
 
-if (newAddress !== null && newAddress.trim() !== "") {
-  student.address = newAddress.trim();
-} else {
-  console.log("No address entered. Address not changed.");
-}
-
-console.log("Updated Object:", student);
+console.log(student);

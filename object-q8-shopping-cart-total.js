@@ -1,5 +1,4 @@
-// Object Q8: Calculate the total price of products in the shopping cart
-
+// Q8 - total price
 let shoppingCart = {
   laptop: 80000,
   mouse: 1500,
@@ -8,9 +7,8 @@ let shoppingCart = {
 };
 
 let total = 0;
-
 for (let item in shoppingCart) {
   total = total + shoppingCart[item];
 }
 
-console.log("Total Price:", total);
+console.log("Total Price: " + total);

@@ -1,8 +1,5 @@
-// Array Q8: Find the largest number in an array of 7 numbers
-
+// Q8 - largest number
 let numbers = [12, 45, 7, 89, 23, 56, 10];
-
-// Assume the first element is the largest
 let largest = numbers[0];
 
 for (let i = 1; i < numbers.length; i++) {
@@ -11,4 +8,4 @@ for (let i = 1; i < numbers.length; i++) {
   }
 }
 
-console.log("Largest Number:", largest);
+console.log("Largest Number: " + largest);

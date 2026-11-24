@@ -1,9 +1,6 @@
-// Array Q4: Remove the first city from an array of 5 cities
-
+// Q4 - remove first city
 let cities = ["Kathmandu", "Pokhara", "Lalitpur", "Biratnagar", "Chitwan"];
-console.log("Original Cities:", cities);
 
-let removedCity = cities.shift();
+cities.shift();
 
-console.log("Removed City:", removedCity);
-console.log("Remaining Cities:", cities);
+console.log(cities);

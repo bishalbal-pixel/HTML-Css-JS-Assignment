@@ -1,9 +1,6 @@
-// Array Q3: Remove the last element from an array of 6 numbers
-
+// Q3 - remove last element
 let numbers = [5, 10, 15, 20, 25, 30];
-console.log("Original Array:", numbers);
 
-let removed = numbers.pop();
+numbers.pop();
 
-console.log("Removed Element:", removed);
-console.log("Updated Array:", numbers);
+console.log(numbers);

@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM Q8 - Remove an Element from a List</title>
+  <title>DOM Q8</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p><a href="index.html">&larr; Back to all questions</a></p>
-  <div class="card">
-    <h1>Student List</h1>
-    <ul id="studentList">
-      <li>Ram</li>
-      <li>Sita</li>
-      <li>Hari</li>
-      <li>Gita</li>
-      <li>Shyam</li>
-    </ul>
-    <button onclick="removeLastStudent()">Remove Last Student</button>
-    <p id="message" class="error"></p>
-  </div>
+  <ul id="students">
+    <li>Ram</li>
+    <li>Sita</li>
+    <li>Hari</li>
+    <li>Gita</li>
+    <li>Shyam</li>
+  </ul>
+
+  <button onclick="removeStudent()">Remove Last Student</button>
+
   <script src="dom-q8-remove-list-item.js"></script>
 </body>
 </html>

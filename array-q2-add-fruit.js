@@ -1,14 +1,7 @@
-// Array Q2: Add a fruit entered by the user to the end of the array
-
+// Q2 - add fruit at the end
 let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
-console.log("Original Array:", fruits);
 
-let newFruit = prompt("Enter a new fruit name:");
+let newFruit = prompt("Enter a fruit name");
+fruits.push(newFruit);
 
-if (newFruit !== null && newFruit.trim() !== "") {
-  fruits.push(newFruit.trim());
-} else {
-  console.log("No fruit entered. Array not changed.");
-}
-
-console.log("Updated Array:", fruits);
+console.log(fruits);

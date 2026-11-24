@@ -1,5 +1,4 @@
-// Object Q7: Display all property names and values using for...in
-
+// Q7 - loop through object
 let product = {
   name: "Laptop",
   brand: "Dell",

@@ -1,5 +1,4 @@
-// Function Q1: Create and call a function
-
+// Q1 - greet function
 function greet() {
   console.log("Welcome to JavaScript Programming!");
 }

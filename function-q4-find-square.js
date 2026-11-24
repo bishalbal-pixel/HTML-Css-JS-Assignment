@@ -1,8 +1,6 @@
-// Function Q4: Find the square of a number
-
-function findSquare(number) {
-  let square = number * number;
-  console.log("Square:", square);
+// Q4 - square of number
+function findSquare(num) {
+  console.log("Square: " + num * num);
 }
 
 findSquare(5);

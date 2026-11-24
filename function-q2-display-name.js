@@ -1,5 +1,4 @@
-// Function Q2: Function with a parameter
-
+// Q2 - function with parameter
 function displayName(name) {
   console.log("Hello, " + name + "! Welcome to the class.");
 }

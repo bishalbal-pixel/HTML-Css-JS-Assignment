@@ -1,5 +1,4 @@
-// Object Q10: Check whether the student passed (marks >= 40)
-
+// Q10 - pass or fail
 let student = {
   name: "Hari",
   age: 21,

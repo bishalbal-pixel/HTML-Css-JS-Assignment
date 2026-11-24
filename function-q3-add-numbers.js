@@ -1,8 +1,6 @@
-// Function Q3: Add two numbers using a function
-
+// Q3 - add two numbers
 function addNumbers(a, b) {
-  let sum = a + b;
-  console.log("Sum:", sum);
+  console.log("Sum: " + (a + b));
 }
 
 addNumbers(10, 20);

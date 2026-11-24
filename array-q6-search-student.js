@@ -1,10 +1,9 @@
-// Array Q6: Check whether a student name entered by the user exists in the array
-
+// Q6 - search student
 let students = ["Ram", "Sita", "Hari", "Gita", "Shyam", "Rita", "Bishal", "Anita"];
 
-let searchName = prompt("Enter a student name to search:");
+let name = prompt("Enter student name");
 
-if (searchName !== null && students.includes(searchName.trim())) {
+if (students.includes(name)) {
   console.log("Student Found");
 } else {
   console.log("Student Not Found");

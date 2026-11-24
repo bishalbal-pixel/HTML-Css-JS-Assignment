@@ -1,12 +1,11 @@
-// Function Q6: Check whether a number is even or odd
-
-function checkEvenOdd(number) {
-  if (number % 2 === 0) {
-    console.log(number + " is an Even Number");
+// Q6 - even or odd
+function checkEvenOdd(num) {
+  if (num % 2 == 0) {
+    console.log("Even Number");
   } else {
-    console.log(number + " is an Odd Number");
+    console.log("Odd Number");
   }
 }
 
 checkEvenOdd(8);
-checkEvenOdd(13);
+checkEvenOdd(7);

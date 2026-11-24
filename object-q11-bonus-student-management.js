@@ -1,5 +1,4 @@
-// Object Q11 (Bonus): Student Management System Using Objects
-
+// Q11 - student management (bonus)
 let student = {
   name: "Ram",
   rollNumber: 101,
@@ -9,52 +8,42 @@ let student = {
   address: "Kathmandu"
 };
 
-// 1. Display all student details
-console.log("1. Student Details:", student);
+// show details
+console.log(student);
 
-// 2. Add a phone number entered by the user
-let phone = prompt("Enter the student's phone number:");
-student.phone = phone !== null && phone.trim() !== "" ? phone.trim() : "Not provided";
-console.log("2. After adding phone:", student);
+// add phone number
+student.phone = prompt("Enter phone number");
 
-// 3. Update the address using prompt()
-let newAddress = prompt("Enter the new address:");
-if (newAddress !== null && newAddress.trim() !== "") {
-  student.address = newAddress.trim();
-}
-console.log("3. After updating address:", student);
+// update address
+student.address = prompt("Enter new address");
 
-// 4. Update the student's marks
-student.marks = 82;
-console.log("4. Updated Marks:", student.marks);
+// update marks
+student.marks = 80;
 
-// 5. Check pass or fail (pass mark is 40)
+// pass or fail
 if (student.marks >= 40) {
-  console.log("5. Result: Passed");
+  console.log("Passed");
 } else {
-  console.log("5. Result: Failed");
+  console.log("Failed");
 }
 
-// 6. Add a new property called college
+// add college
 student.college = "Kathmandu College";
-console.log("6. After adding college:", student);
 
-// 7. Delete the age property
+// delete age
 delete student.age;
-console.log("7. After deleting age:", student);
 
-// 8. Check whether rollNumber exists
+// check roll number
 if ("rollNumber" in student) {
-  console.log("8. rollNumber property exists");
+  console.log("rollNumber exists");
 } else {
-  console.log("8. rollNumber property does not exist");
+  console.log("rollNumber does not exist");
 }
 
-// 9. Display all property names and values using a loop
-console.log("9. All Properties:");
+// show all properties
 for (let key in student) {
-  console.log("   " + key + ": " + student[key]);
+  console.log(key + ": " + student[key]);
 }
 
-// 10. Display the final updated object
-console.log("10. Final Student Object:", student);
+// final object
+console.log(student);
